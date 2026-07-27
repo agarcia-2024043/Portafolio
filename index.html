@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelo García — Desarrollador Full Stack</title>
+  <meta name="description"
+    content="Angelo. Desarrollador Full Stack. React, .NET, Node.js. Sistemas completos del backend a la app.">
+  <meta name="author" content="Angelo García">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-text"><span>ANGELO GARCÍA</span></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="nav-left">
+      <span class="nav-name">Angelo</span>
+      <span class="nav-role">Full Stack Developer</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">sobre mí</a></li>
+        <li><a href="#proyectos">proyectos</a></li>
+        <li><a href="#contacto">contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="inicio">
+    <div class="hero-availability">
+      <span class="dot"></span>
+      Disponible para proyectos
+    </div>
+
+    <div class="hero-pretitle">
+      <span>creative</span>
+    </div>
+
+    <h1>
+      <div class="line"><span>Full Stack</span></div>
+      <div class="line"><span class="outline">Developer</span></div>
+    </h1>
+
+    <div class="hero-desc">
+      <p>
+        Soy <strong>Angelo García</strong> — Desarrollador Full Stack enfocado en
+        construir sistemas completos. Del backend a la app,
+        cada proyecto es un sistema que funciona tan bien como se ve.
+      </p>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#contacto" class="btn-marquee" role="button">
+        <span class="btn-label">Contáctame</span>
+        <div class="btn-marquee-track" aria-hidden="true">
+          <div class="btn-marquee-inner">
+            <span>Contáctame</span><span>Contáctame</span>
+            <span>Contáctame</span><span>Contáctame</span>
+            <span>Contáctame</span><span>Contáctame</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER STRIP ═══ -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span><b>REACT</b> — REACT NATIVE — .NET / C# — NODE.JS — EXPRESS — JAVA — HTML — CSS — JAVASCRIPT — MYSQL —
+        MONGODB — POSTGRESQL — DOCKER — GIT — GITHUB — <b>REACT</b> —
+        REACT NATIVE — .NET / C# — NODE.JS — EXPRESS — JAVA — HTML — CSS — JAVASCRIPT — MYSQL —
+        MONGODB — POSTGRESQL — DOCKER — GIT — GITHUB —</span>
+      <span><b>REACT</b> — REACT NATIVE — .NET / C# — NODE.JS — EXPRESS — JAVA — HTML — CSS — JAVASCRIPT — MYSQL —
+        MONGODB — POSTGRESQL — DOCKER — GIT — GITHUB — <b>REACT</b> — REACT NATIVE — .NET / C# — NODE.JS — EXPRESS —
+        JAVA — HTML — CSS — JAVASCRIPT — MYSQL —
+        MONGODB — POSTGRESQL — DOCKER — GIT — GITHUB — </span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <div class="section-number">01 — Sobre mí</div>
+        <div class="section-title">
+          <div class="line anim-line"><span>Hola. Soy</span></div>
+          <div class="line anim-line"><span class="outline-text">Angelo</span></div>
+        </div>
+      </div>
+
+      <div class="section-subtitle reveal">
+        Utilizo mi pasión y habilidades para crear productos digitales completos.
+        Desde microservicios hasta apps móviles, construyo sistemas que resuelven problemas reales.
+      </div>
+
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>
+            Me describo como un desarrollador que disfruta entender el sistema completo: cómo la base de datos,
+            la API y la interfaz trabajan juntas. Me enfoco en arquitecturas de microservicios, autenticación
+            segura y experiencias de usuario cuidadas al detalle.
+          </p>
+          <p>
+            Mi meta es seguir profundizando en desarrollo backend con .NET y Node.js, mientras fortalezco
+            mis apps móviles con React Native — buscando siempre entregar proyectos que funcionen tan bien
+            como se ven.
+          </p>
+        </div>
+        <div class="data-list reveal">
+          <div class="data-row"><span class="key">Nombre</span><span class="val">Angelo Ricardo García Hernández</span>
+          </div>
+          <div class="data-row"><span class="key">Edad</span><span class="val">18 años</span></div>
+          <div class="data-row"><span class="key">Ubicación</span><span class="val">Guatemala</span></div>
+          <div class="data-row"><span class="key">Contacto</span><span class="val">auralux.gt@gmail.com</span></div>
+          <div class="data-row"><span class="key">Años programando</span><span class="val">3 años</span></div>
+          <div class="data-row"><span class="key">Formación</span><span class="val">Fundación Kinal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="habilidades">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <div class="section-number">02 — Habilidades</div>
+        <div class="section-title">
+          <div class="line anim-line"><span>Mi Stack</span></div>
+          <div class="line anim-line"><span class="outline-text">Técnico</span></div>
+        </div>
+      </div>
+
+      <!-- Tech Cards Grid -->
+      <div class="tech-cards-grid">
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          </div>
+          <div class="tech-card-name">React</div>
+          <div class="tech-card-category">Framework Frontend</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"
+              style="filter: hue-rotate(180deg);">
+          </div>
+          <div class="tech-card-name">React Native</div>
+          <div class="tech-card-category">Framework Móvil</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET">
+          </div>
+          <div class="tech-card-name">.NET / C#</div>
+          <div class="tech-card-category">Framework Backend</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          </div>
+          <div class="tech-card-name">Node.js</div>
+          <div class="tech-card-category">Entorno de ejecución</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
+              style="filter: invert(1);">
+          </div>
+          <div class="tech-card-name">Express</div>
+          <div class="tech-card-category">Framework Backend</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          </div>
+          <div class="tech-card-name">Java</div>
+          <div class="tech-card-category">Lenguaje de programación</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          </div>
+          <div class="tech-card-name">HTML</div>
+          <div class="tech-card-category">Lenguaje de marcado</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          </div>
+          <div class="tech-card-name">CSS</div>
+          <div class="tech-card-category">Hojas de estilo</div>
+        </div>
+
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+          </div>
+          <div class="tech-card-name">MySQL</div>
+          <div class="tech-card-category">Base de Datos SQL</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+          </div>
+          <div class="tech-card-name">MongoDB</div>
+          <div class="tech-card-category">Base de Datos NoSQL</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL">
+          </div>
+          <div class="tech-card-name">PostgreSQL</div>
+          <div class="tech-card-category">Base de Datos SQL</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          </div>
+          <div class="tech-card-name">Docker</div>
+          <div class="tech-card-category">Contenedores</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+          </div>
+          <div class="tech-card-name">JavaScript</div>
+          <div class="tech-card-category">Lenguaje de programación</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+          </div>
+          <div class="tech-card-name">C#</div>
+          <div class="tech-card-category">Lenguaje de programación</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          </div>
+          <div class="tech-card-name">Git</div>
+          <div class="tech-card-category">Control de versiones</div>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-card-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              style="filter: invert(1);">
+          </div>
+          <div class="tech-card-name">GitHub</div>
+          <div class="tech-card-category">Repositorio en línea</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION / EXPERIENCE ═══ -->
+  <section id="curriculum">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <div class="section-number">03 — Educación y experiencia</div>
+        <div class="section-title">
+          <div class="line anim-line"><span>De la teoría</span></div>
+          <div class="line anim-line"><span class="outline-text">a producción</span></div>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <span class="tl-year">2015 — 2020</span>
+          <div class="tl-title">Estudios nivel primario — Escuela La Salle TN</div>
+          <div class="tl-desc">Formación académica fundamental: desarrollo de habilidades en lectura, escritura, matemáticas, ciencias naturales y sociales, así como valores y disciplina que sentaron las bases para el aprendizaje continuo.</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2021 — 2023</span>
+          <div class="tl-title">Estudios nivel básico — INEB Edgar Arnoldo Medrano Méndez</div>
+          <div class="tl-desc">Educación secundaria con énfasis en ciencias, matemáticas y comunicación. Desarrollo de pensamiento crítico, trabajo en equipo y primeras aproximaciones a la tecnología y la informática.</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2024 — Actualidad</span>
+          <div class="tl-title">Graduando Perito Tecnico en Informatica - Fundación Kinal</div>
+          <div class="tl-desc">Formación en programación full stack: bases de datos, backend, frontend y arquitectura de
+            software.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CASES / PROJECTS (bepatrickdavid grid) ═══ -->
+  <section class="cases-label-section">
+    <div class="section-wrapper">
+      <div class="cases-label reveal">
+        <span class="star-icon">✦</span>
+        <span>CASOS SELECCIONADOS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="cases-section">
+    <div class="section-wrapper cases-wrapper">
+      <!-- Zigzag Grid -->
+      <div class="cases-grid">
+
+        <!-- Row 1: Text Left — Image Right -->
+        <div class="case-row" data-case="1">
+          <div class="case-text-cell">
+            <h3 class="case-title anim-line"><span>OneCoin</span></h3>
+            <p class="case-role">Diseño y desarrollo Full Stack</p>
+          </div>
+          <div class="case-img-cell">
+            <div class="case-img-inner">
+              <img src="images/project-onecoin.jpg" alt="OneCoin — Sistema Bancario" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Image Left — Text Right -->
+        <div class="case-row case-row--reverse" data-case="2">
+          <div class="case-img-cell">
+            <div class="case-img-inner">
+              <img src="images/project-gepardo.png" alt="Mixología el Gepardo" loading="lazy">
+            </div>
+          </div>
+          <div class="case-text-cell">
+            <h3 class="case-title anim-line"><span>El Gepardo</span></h3>
+            <p class="case-role">Diseño y desarrollo de UX/UI</p>
+          </div>
+        </div>
+
+        <!-- Row 3: Text Left — Image Right -->
+        <div class="case-row" data-case="3">
+          <div class="case-text-cell">
+            <h3 class="case-title anim-line"><span>K-DontForget</span></h3>
+            <p class="case-role">Diseño y desarrollo de UX/UI</p>
+          </div>
+          <div class="case-img-cell">
+            <div class="case-img-inner">
+              <img src="images/project-kdontforget.png" alt="K-DontForget" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="cases-cta reveal">
+        <span class="cases-cta-hint">Sí, estos son algunos botones</span>
+        <a href="#contacto" class="btn-marquee" role="button">
+          <span class="btn-label">Contáctame</span>
+          <div class="btn-marquee-track" aria-hidden="true">
+            <div class="btn-marquee-inner">
+              <span>Contáctame</span><span>Contáctame</span>
+              <span>Contáctame</span><span>Contáctame</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CASE DETAIL OVERLAY ═══ -->
+  <div class="case-detail" id="caseDetail">
+    <div class="case-detail-bg" id="caseDetailBg"></div>
+    <div class="case-detail-content">
+      <button class="case-back" id="caseBack" aria-label="Volver">
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M38 10H2M2 10L10 2M2 10L10 18" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <h2 class="case-detail-title" id="caseDetailTitle"></h2>
+      <p class="case-detail-desc" id="caseDetailDesc"></p>
+      <div class="case-detail-img">
+        <img id="caseDetailImg" src="" alt="">
+      </div>
+      <div class="case-detail-footer">
+        <div class="case-detail-line"></div>
+        <div class="case-detail-meta">
+          <p class="case-detail-tags" id="caseDetailTags"></p>
+          <a href="#" class="case-detail-link" id="caseDetailLink" target="_blank">
+            ver repositorio
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" fill="white">
+              <path d="M14.875 13.357V3.643L1.518 17 0 15.482 13.357 2.125H3.643V0H17v13.357z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT MARQUEE ═══ -->
+  <div class="contact-marquee">
+    <div class="track">
+      <span>Hablemos</span><span>—</span><span>Trabajemos juntos</span><span>—</span>
+      <span>Hablemos</span><span>—</span><span>Trabajemos juntos</span><span>—</span>
+      <span>Hablemos</span><span>—</span><span>Trabajemos juntos</span><span>—</span>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contacto">
+    <div class="section-wrapper">
+      <div class="section-header">
+        <div class="section-number">05 — Contacto</div>
+        <div class="section-title">
+          <div class="line anim-line"><span>Let's</span></div>
+          <div class="line anim-line"><span class="outline-text">Connect</span></div>
+        </div>
+      </div>
+
+      <div class="section-subtitle reveal">
+        Siempre estoy interesado en nuevos proyectos, prácticas o propuestas.
+      </div>
+
+      <div class="contact-content">
+        <div class="reveal">
+          <span class="email-copy" id="emailCopy">auralux.gt@gmail.com</span>
+          <p class="email-hint">Clic para copiar</p>
+
+          <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px;">
+            <div class="btn-marquee" role="button" style="cursor: default;">
+              <span class="btn-label">Backend .NET</span>
+              <div class="btn-marquee-track" aria-hidden="true">
+                <div class="btn-marquee-inner">
+                  <span>Backend .NET</span><span>Backend .NET</span>
+                  <span>Backend .NET</span><span>Backend .NET</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-marquee" role="button" style="cursor: default;">
+              <span class="btn-label">Frontend React</span>
+              <div class="btn-marquee-track" aria-hidden="true">
+                <div class="btn-marquee-inner">
+                  <span>Frontend React</span><span>Frontend React</span>
+                  <span>Frontend React</span><span>Frontend React</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-marquee" role="button" style="cursor: default;">
+              <span class="btn-label">Mobile Apps</span>
+              <div class="btn-marquee-track" aria-hidden="true">
+                <div class="btn-marquee-inner">
+                  <span>Mobile Apps</span><span>Mobile Apps</span>
+                  <span>Mobile Apps</span><span>Mobile Apps</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="socials reveal">
+          <a href="https://www.linkedin.com/in/angelo-garc%C3%ADa-288085425" target="_blank">
+            LinkedIn
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="currentColor">
+              <path d="M14.875 13.357V3.643L1.518 17 0 15.482 13.357 2.125H3.643V0H17v13.357z" />
+            </svg>
+          </a>
+          <a href="https://github.com/agarcia-2024043" target="_blank">
+            GitHub
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="currentColor">
+              <path d="M14.875 13.357V3.643L1.518 17 0 15.482 13.357 2.125H3.643V0H17v13.357z" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
