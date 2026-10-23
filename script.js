@@ -13,21 +13,32 @@ const caseData = {
     desc: 'Plataforma bancaria con microservicios: transferencias con límites, reversión de depósitos, tasas de cambio en tiempo real y autenticación con recuperación de contraseña vía OTP. Incluye app móvil en React Native con el mismo sistema de diseño dark/gold.',
     tags: '.NET — React — React Native — PostgreSQL — MongoDB — JWT',
     img: 'images/project-onecoin.jpg',
-    link: 'https://github.com/agarcia-2024043/BitCoiners-Sistema-Bancario-One-Coin.git'
+    link: 'https://github.com/agarcia-2024043/BitCoiners-Sistema-Bancario-One-Coin.git',
+    linkText: 'Ver repositorio'
   },
   '2': {
-    title: 'El Gepardo',
-    desc: 'Aplicación para restaurante con panel administrativo para gestión de pedidos y menú, subida de imágenes en la nube con Cloudinary y actualización de estado de pedidos en tiempo real vía websockets.',
+    title: 'El Gepardo — Hamburguesería y Mixología',
+    desc: 'Aplicación para restaurante y mixología con panel administrativo para gestión de pedidos y menú digital, subida de imágenes en la nube con Cloudinary y actualización de estado de pedidos en tiempo real vía websockets.',
     tags: '.NET — React Native — React — Cloudinary — Node.js',
     img: 'images/project-gepardo.png',
-    link: 'https://github.com/lcastro-2021276/BitCoiners-Mixologa-el-Gepardo.git'
+    link: 'https://github.com/lcastro-2021276/BitCoiners-Mixologa-el-Gepardo.git',
+    linkText: 'Ver repositorio'
   },
   '3': {
     title: 'K-DontForget',
     desc: 'Backend con Clean Architecture y panel administrativo para Fundación Kinal, con sistema de notificaciones vía correo electrónico integrado con Gmail API. Gestión completa de recordatorios y usuarios.',
     tags: '.NET — Clean Architecture — React — Gmail API — PostgreSQL',
     img: 'images/project-kdontforget.png',
-    link: 'https://github.com/agarcia-2024043/K-DontForget---BitCoiners.git'
+    link: 'https://github.com/agarcia-2024043/K-DontForget---BitCoiners.git',
+    linkText: 'Ver repositorio'
+  },
+  '4': {
+    title: 'THE CUT — Catálogo para barbería',
+    desc: 'Diseño y desarrollo de catálogo web interactivo para barberías y salones de belleza. Permite explorar cortes de tendencia, servicios de afeitado y cuidado de barba con tarifas detalladas, facilitando la conversión de clientes y la presencia digital del negocio.',
+    tags: 'Diseño Web — Catálogo Digital — JavaScript — UI/UX',
+    img: 'images/project-thecut.png',
+    link: 'https://agarcia-2024043.github.io/Catalogo_Barber/',
+    linkText: 'Visitar sitio web'
   }
 };
 
@@ -229,7 +240,15 @@ function openCase(row) {
   detailTags.textContent  = data.tags;
   detailImg.src           = data.img;
   detailImg.alt           = data.title;
-  detailLink.href         = data.link;
+
+  if (data.link && data.link !== '#' && data.link.trim() !== '') {
+    detailLink.href = data.link;
+    detailLink.style.display = 'inline-flex';
+    const label = data.linkText || 'Ver repositorio';
+    detailLink.innerHTML = `${label} <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M14.875 13.357V3.643L1.518 17 0 15.482 13.357 2.125H3.643V0H17v13.357z"/></svg>`;
+  } else {
+    detailLink.style.display = 'none';
+  }
 
   // Blurred background = same image
   detailBg.style.backgroundImage = `url('${data.img}')`;
